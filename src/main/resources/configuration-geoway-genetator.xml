@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+  <category name="jdbc" description="数据库相关配置">
+    <item name="driverName" value="oracle.jdbc.driver.OracleDriver" description="驱动名称"/>
+    <item name="url" value="jdbc:oracle:thin:xxxx" description="url"/>
+    <item name="username" value="xxx" description="用户名"/>
+    <item name="password" value="xxx" description="密码"/>
+  </category>
+  
+  <category name="base" description="基础配置">
+    <item name="database" value="oracle" description="数据库,即:oracle,mysql等"/>
+    <item name="schemaPattern" value="SLAJ" description="每个用户对应一个同名的schema"/>
+    <item name="tableNames" value="OBJ_SMORG" description="需要工具生成的表，逗号分隔"/>
+    <item name="entityNames" value="Smorg" description="实体名，逗号分隔， 与上面的表名一一对应"/>
+    <item name="entityDescs" value="Smorg" description="实体描述， 与上面的实体名一一对应"/>
+    <item name="baseDir" value="C:\Users\zhaoguiyang\Desktop\code" description="若为空则默认到工作空间下,否则文件存放在指定的根目录"/>
+    <item name="srcRoot" value="src.main.java" description="代码根目录,即Source Folder,注意只有默认存储在工作空间时才生效"/>
+  </category>
+  
+  <category name="entity" description="实体配置">
+    <item name="package" value="com.geoway.safety.supervision.model.jckobj" description="包路径"/>
+    <item name="path" value="entity" description="实体存放的路径，相对于baseDir"/>
+    <item name="prefix" value="" description="名称前缀" />
+    <item name="suffix" value="" description="名称后缀" />
+  </category>
+  
+  <category name="dao" description="dao配置">
+    <item name="package" value="com.geoway.safety.supervision.dao.jckobj" description="包路径"/>
+    <item name="path" value="dao" description="dao存放的路径，相对于baseDir"/>
+    <item name="prefix" value="I" description="名称前缀" />
+    <item name="suffix" value="Dao" description="名称后缀" />
+  </category>
+  
+  <category name="mapperXml" description="mapper文件配置">
+    <item name="package" value="com.geoway.safety.supervision.dao.jckobj.xml" description="包路径"/>
+    <item name="path" value="mapper" description="mapper.xml存放的路径，相对于baseDir"/>
+    <item name="prefix" value="" description="名称前缀" />
+    <item name="suffix" value="Mapper" description="名称后缀" />
+  </category>
+  
+  <category name="vo" description="vo文件配置">
+    <item name="package" value="com.geoway.safety.supervision.vo.jckobj" description="包路径"/>
+    <item name="path" value="vo" description="vo存放的路径，相对于baseDir"/>
+    <item name="prefix" value="" description="名称前缀" />
+    <item name="suffix" value="VO" description="名称后缀" />
+  </category>
+  
+  <category name="manager" description="manager配置">
+    <item name="package" value="org.qyk.dms.person.manager" description="包路径"/>
+    <item name="path" value="manager" description="实体存放的路径，相对于baseDir"/>
+    <item name="prefix" value="" description="名称前缀" />
+    <item name="suffix" value="" description="名称后缀" />
+  </category>
+  
+  <category name="managerImpl" description="managerImpl配置">
+    <item name="package" value="org.qyk.dms.person.manager.impl" description="包路径"/>
+    <item name="path" value="manager/impl" description="managerImpl存放的路径，相对于baseDir"/>
+    <item name="prefix" value="" description="名称前缀" />
+    <item name="suffix" value="" description="名称后缀" />
+  </category>
+  
+  <category name="command" description="command配置">
+    <item name="package" value="org.qyk.person.spi.command" description="包路径"/>
+    <item name="path" value="command" description="command存放的路径，相对于baseDir"/>
+  </category>
+  
+  <category name="service" description="service配置">
+    <item name="package" value="com.geoway.safety.supervision.service.jckobj" description="包路径"/>
+    <item name="path" value="service" description="service存放的路径，相对于baseDir"/>
+    <item name="prefix" value="I" description="名称前缀" />
+    <item name="suffix" value="Service" description="名称后缀" />
+  </category>
+  
+  <category name="serviceImpl" description="serviceImpl配置">
+    <item name="package" value="com.geoway.safety.supervision.service.jckobj.impl" description="包路径"/>
+    <item name="path" value="service/impl" description="实体存放的路径，相对于baseDir"/>
+    <item name="prefix" value="" description="名称前缀" />
+    <item name="suffix" value="ServiceImpl" description="名称后缀" />
+  </category>
+  <category name="action" description="action配置">
+    <item name="package" value="com.geoway.safety.supervision.action.jckobj" description="包路径"/>
+    <item name="path" value="action" description="实体存放的路径，相对于baseDir"/>
+    <item name="prefix" value="" description="名称前缀" />
+    <item name="suffix" value="Action" description="名称后缀" />
+  </category>
+  <category name="serviceTest" description="service测试类配置">
+    <item name="package" value="org.qyk.dms.person.service.impl" description="包路径"/>
+    <item name="path" value="service/impl" description="实体存放的路径，相对于baseDir"/>
+  </category>
+</system>
